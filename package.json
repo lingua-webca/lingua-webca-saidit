@@ -1,6 +1,6 @@
 {
   "name": "@lingua-webca/saidit",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Lingua-Webca API for SaidIt",
   "main": "build/main/index.js",
   "typings": "build/main/index.d.ts",
@@ -50,7 +50,13 @@
   "engines": {
     "node": ">=8.9"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@lingua-webca/core": "^0.0.3",
+    "@types/ramda": "^0.26.38",
+    "query-string": "^6.9.0",
+    "ramda": "^0.26.1",
+    "uri-js": "^4.2.2"
+  },
   "devDependencies": {
     "@bitjson/npm-scripts-info": "^1.0.0",
     "@bitjson/typedoc": "^0.15.0-0",
@@ -85,7 +91,8 @@
     }
   },
   "prettier": {
-    "singleQuote": true
+    "singleQuote": true,
+    "semi": false
   },
   "nyc": {
     "extends": "@istanbuljs/nyc-config-typescript",
